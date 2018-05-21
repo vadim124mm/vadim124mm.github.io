@@ -14,7 +14,7 @@ function reqReadyStateChange() {
         document.getElementById("output").innerHTML=request.responseText;
 }
 var body = "Name=" + personName.value + "&Phone="+ personPhone.value;
-request.open("POST", "http://telegramsender.somee.com/api/values");
+request.open("POST", "http://localhost:51331/api/values");
 request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 request.onreadystatechange = reqReadyStateChange;
 request.send(body);
