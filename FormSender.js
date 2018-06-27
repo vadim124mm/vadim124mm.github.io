@@ -15,7 +15,7 @@ function reqReadyStateChange() {
     if (xhr.readyState == 4 && xhr.status == 200)
         document.getElementById("output").innerHTML=xhr.responseText;
 }
-var body = "Name=" + personName.value + "&Phone="+ personPhone.value + "&ChatID=232076268";
+var body = "Name=" + personName.value + "&Phone="+ personPhone.value + "&ChatID=-1001371152946";
 xhr.open("POST", "https://cors-anywhere.herokuapp.com/http://telegramsender.somee.com/api/values");
 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 xhr.onreadystatechange = reqReadyStateChange;
