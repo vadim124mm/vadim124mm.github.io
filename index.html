@@ -8,21 +8,22 @@
   <link href="css/main.css" rel="stylesheet" >
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous"><link href="css/font-awesome.css"  >
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+<link href="css/font-awesome.css"  >
 </head>
 <body>
-    <header class="b-header">
+    <header class="b-header" >
         <div class="all-wr">
                 <div class="b-header_line">
                     <a class="b-header_logo">logo</a> 
                     <p class="b-header_contact">+380637266043</p>
-                    <nav class="b-header_menu">
-                        <a href="" class="b-menu_link b-header_link__active">Главная</a>
-                        <a href="" class="b-menu_link">Направления</a>
-                        <a href="" class="b-menu_link">Расписание</a>
-                        <a href="" class="b-menu_link ">Абонементы</a>
-                        <a href="" class="b-menu_link ">Галерея</a>
-                        <a href="" class="b-menu_link ">Контакты</a>
+                    <nav class="b-header_menu b-menu">
+                        <a  class="b-menu_link b-header_link__active">Главная</a>
+                        <a href="#directions"class="b-menu_link">Направления</a>
+                        <a class="b-menu_link">Расписание</a>
+                        <a href="#sertificates" class="b-menu_link ">Абонементы</a>
+                        <a  class="b-menu_link ">Галерея</a>
+                        <a href="#contacts" class="b-menu_link ">Контакты</a>
                     </nav>   
                 </div>
                 <div class="b-header_slider b-slider">
@@ -98,68 +99,102 @@
                 </div>
         </div>
     </header>
-    <div class="b-section">
+    <div class="b-block main">
         <div class="all-wr">
-            <h2 class="b-section_name">Направления</h2>
-            <section class="b-section_article b-section_article__">
-                <div class="b-section_description">
-                    <h3 class="b-section_heading">Балет для взрослых</h3>
-                    <p class="b-section_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
-                    <button class="b-section_button">Подробнее</button>
+            <h2 class="b-block_heading" id="directions">Направления</h2> 
+            <section class="main_article b-article">
+                <div class="b-article_description">
+                    <h3 class="b-article_heading">Балет для взрослых</h3>
+                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
+                    <button class="b-article_button button">Подробнее</button>
                 </div>
-                <div class="b-section_pic b-section_pic__1"></div>
+                <div class="b-article_pic b-article_pic__1"></div>
             </section>
-            <section class="b-section_article b-section_article__">
-                <div class="b-section_description">
-                    <h3 class="b-section_heading">Классика для детей</h3>
-                    <p class="b-section_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
-                    <button class="b-section_button">Подробнее</button>
+            <section class="main_article b-article">
+                <div class="b-article_description">
+                    <h3 class="b-article_heading">Классика для детей</h3>
+                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
+                    <button class="b-article_button  button">Подробнее</button>
                 </div>
-                <div class="b-section_pic b-section_pic__2"></div>
+                <div class="b-article_pic b-article_pic__2"></div>
             </section>
-            <section class="b-section_article b-section_article__">
-                <div class="b-section_description">
-                    <h3 class="b-section_heading">Стретчинг</h3>
-                    <p class="b-section_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
-                    <button class="b-section_button">Подробнее</button>
+            <section class="main_article b-article">
+                <div class="b-article_description">
+                    <h3 class="b-article_heading">Стретчинг</h3>
+                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
+                    <button class="b-article_button  button">Подробнее</button>
                 </div>
-                <div class="b-section_pic b-section_pic__3"></div>
+                <div class="b-article_pic b-article_pic__3"></div>
             </section>
-            <section class="b-section_article b-section_article__">
-                <div class="b-section_description">
-                    <h3 class="b-section_heading">Современный танец</h3>
-                    <p class="b-section_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
-                    <button class="b-section_button">Подробнее</button>
+            <section class="main_article b-article">
+                <div class="b-article_description">
+                    <h3 class="b-article_heading">Современный танец</h3>
+                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
+                    <button class="b-article_button  button">Подробнее</button>
                 </div>
-                <div class="b-section_pic b-section_pic__4"></div>
+                <div class="b-article_pic b-article_pic__4"></div>
             </section>
-            <section class="b-section_article b-section_article__">
-                <div class="b-section_description">
-                    <h3 class="b-section_heading">Партерный тренаж</h3>
-                    <p class="b-section_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
-                    <button class="b-section_button">Подробнее</button>
+            <section class="main_article b-article">
+                <div class="b-article_description">
+                    <h3 class="b-article_heading">Партерный тренаж</h3>
+                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
+                    <button class="b-article_button  button">Подробнее</button>
                 </div>
-                <div class="b-section_pic b-section_pic__5"></div>
+                <div class="b-article_pic b-article_pic__5"></div>
             </section>
-            <section class="b-section_article b-section_article__">
-                <div class="b-section_description">
-                    <h3 class="b-section_heading">Занятия на природе</h3>
-                    <p class="b-section_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
-                    <button class="b-section_button">Подробнее</button>
+            <section class="main_article b-article">
+                <div class="b-article_description">
+                    <h3 class="b-article_heading">Занятия на природе</h3>
+                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
+                    <button class="b-article_button  button">Подробнее</button>
                 </div>
-                <div class="b-section_pic b-section_pic__6"></div>
+                <div class="b-article_pic b-article_pic__6"></div>
             </section>
         </div>
+
     </div>
+    <div class="b-block serificates">
+        <div class="all-wr">
+            <h2 class="b-block_heading" id="sertificates">Абонементы</h2>
+            <div class="b-block_item-container">
+                <div class="b-block_item item">
+                    <div class="item_class">1 занятие</div>
+                    <div class="item_price"><span class="item_price__bold">100</span><br>грн</div>
+                    <div class="item_button button">Купить</div>
+                </div>
+                <div class="b-block_item item">
+                    <div class="item_class">4 занятий</div>
+                    <div class="item_price"><span  class="item_price__bold">350</span><br>грн</div>
+                    <div class="item_button button">Купить</div>
+                </div>
+                <div class="b-block_item item">
+                    <div class="item_class">8 занятий</div>
+                    <div class="item_price"><span class="item_price__bold">650</span><br>грн</div>
+                    <div class="item_button button">Купить</div>
+                </div>
+                <div class="b-block_item item">
+                    <div class="item_class">12 занятий</div>
+                    <div class="item_price"><span class="item_price__bold">850</span><br>грн</div>
+                    <div class="item_button button">Купить</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="b-block">
+        <div name="conacts" class="b-block_form">
+            <form action="" class="b-form" name="user">
+                <h2 class="b-form_heading">JОставьте заявку<span class="b-form_heading__small">на ваше первое занятие</span></h2>
+                <input id="input-name" type="text" class="b-form_input" name="name" placeholder="Введите имя"><label for="input-name">Ваше имя</label>
+                <input id="input-phone" type="text" class="b-form_input" name="phone" placeholder="Введите телефон"><label for="input-phone">Контактный телефон</label>
+                <input class="b-form_input__button" type="submit" name="submit" value="Отправить" id="form-button" />
+            </form>
+        </div>
+        
+    </div>
+    <footer class="b-footer">
+    </footer>
     
-    <div class="b-block b-block_form">
-        <form action="" class="b-form" name="user">
-            <h2 class="b-form_heading">JОставьте заявку<span class="b-form_heading__small">на ваше первое занятие</span></h2>
-            <input id="input-name" type="text" class="b-form_input" name="name" placeholder="Введите имя"><label for="input-name">Ваше имя</label>
-            <input id="input-phone" type="text" class="b-form_input" name="phone" placeholder="Введите телефон"><label for="input-phone">Контактный телефон</label>
-            <input class="b-form_input__button" type="submit" name="submit" value="Отправить" id="form-button" />
-        </form>
-    </div>
     <script src="js/main.js"></script>
 <!-- <script src="js/FormSender.js"></script>  -->  
 </body>
