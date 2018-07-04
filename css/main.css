@@ -12,6 +12,28 @@ body {
   max-width: 1000px;
   margin: 0 auto; }
 
+.b-block {
+  padding: 100px 0; }
+  .b-block_heading {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 100px; }
+
+.button {
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: transparent;
+  border: 1px solid #000000;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box; }
+
 .b-header {
   background-color: #ffffff;
   padding-top: 15px;
@@ -36,6 +58,8 @@ body {
     float: left;
     padding-right: 15px;
     list-style: none; }
+  .b-header_slider {
+    margin-bottom: 65px; }
 
 .b-menu_link {
   font: 500 14px Montserrat;
@@ -52,13 +76,11 @@ body {
 .b-slider {
   position: relative;
   width: 1000px;
-  height: 400px;
-  margin-bottom: 65px; }
+  height: 400px; }
 
 .b-slide {
   width: 1000px;
   height: 400px;
-  margin: 0 auto;
   padding: 40px 0;
   position: absolute;
   opacity: 0;
@@ -177,13 +199,6 @@ body {
         left: 155px;
         -webkit-background-size: 720px auto;
                 background-size: 720px auto; }
-      .b-slide_pic__woman__3 {
-        width: 300px;
-        background-image: url(../img/4.png);
-        top: -100px;
-        left: 285px;
-        -webkit-background-size: 300px auto;
-                background-size: 300px auto; }
   .b-slide_lift {
     position: absolute;
     top: 255px;
@@ -228,80 +243,90 @@ body {
     -webkit-background-size: 30px auto;
             background-size: 30px auto; }
 
-.b-section {
+.main {
   background: #f2f2f2;
-  height: 100%;
   color: #000000;
-  font: 400 16px Montserrat;
-  padding: 50px 0; }
-  .b-section_article {
-    margin-bottom: 40px;
-    overflow: hidden;
-    height: 100%; }
-  .b-section_name {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 60px; }
-  .b-section_description {
+  font: 400 16px Montserrat; }
+  .main_article {
+    margin-bottom: 40px; }
+
+.b-article {
+  overflow: hidden; }
+  .b-article_description {
     width: 500px;
     text-align: right;
     overflow: hidden;
     display: inline-block;
     padding-top: 85px; }
-  .b-section_heading {
+  .b-article_heading {
     font-size: 21px;
     font-weight: 500;
     margin-bottom: 35px; }
-  .b-section_text {
+  .b-article_text {
     margin-bottom: 35px; }
-  .b-section_button {
-    width: 120px;
-    height: 40px;
-    font-size: 14px;
-    font-weight: 500;
-    background-color: transparent;
-    border: 1px solid #000000;
-    float: right;
-    letter-spacing: 1px;
-    cursor: pointer; }
-  .b-section_pic {
+  .b-article_button {
+    float: right; }
+  .b-article_pic {
     width: 500px;
     height: 400px; }
-    .b-section_pic__1 {
+    .b-article_pic__1 {
       background: url(../img/1.png) no-repeat;
       -webkit-background-size: 400px auto;
               background-size: 400px auto; }
-    .b-section_pic__2 {
+    .b-article_pic__2 {
       background: url(../img/2.png) no-repeat;
       -webkit-background-size: auto 400px;
               background-size: auto 400px;
       background-position-x: 150px; }
-    .b-section_pic__3 {
+    .b-article_pic__3 {
       background: url(../img/3.png) no-repeat;
       -webkit-background-size: 300px auto;
               background-size: 300px auto; }
-    .b-section_pic__4 {
+    .b-article_pic__4 {
       background: url(../img/4.png) no-repeat;
       -webkit-background-size: auto 380px;
               background-size: auto 380px; }
-    .b-section_pic__5 {
+    .b-article_pic__5 {
       background: url(../img/5.png) no-repeat;
       -webkit-background-size: 420px auto;
               background-size: 420px auto; }
-    .b-section_pic__6 {
+    .b-article_pic__6 {
       background: url(../img/6.png) no-repeat;
       -webkit-background-size: auto 400px;
               background-size: auto 400px;
       background-position-x: 150px; }
 
-.b-section_article:nth-of-type(even) .b-section_description {
+.b-block_item-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.b-block_item {
+  margin-right: 40px; }
+  .b-block_item:last-child {
+    margin-right: 0px; }
+
+.item {
+  width: 220px;
+  height: 300px;
+  background-color: #f2f2f2;
+  padding: 45px 0;
+  text-align: center; }
+  .item_button {
+    margin: 0 auto; }
+  .item_price {
+    margin: 50px 0; }
+    .item_price__bold {
+      font: 500 40px Montserrat; }
+
+.main_article:nth-of-type(even) .b-article_description {
   text-align: left; }
-  .b-section_article:nth-of-type(even) .b-section_description .b-section_button {
+  .main_article:nth-of-type(even) .b-article_description .b-article_button {
     float: left; }
 
-.b-section_article:nth-of-type(even) .b-section_pic {
+.main_article:nth-of-type(even) .b-article_pic {
   float: right; }
 
-.b-section_article:nth-of-type(odd) .b-section_pic {
+.main_article:nth-of-type(odd) .b-article_pic {
   float: left; }
