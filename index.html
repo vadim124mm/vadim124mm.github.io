@@ -1,154 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="css/main.css" rel="stylesheet" >
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
-<link href="css/font-awesome.css"  >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P"
+        crossorigin="anonymous">
+    <link href="css/font-awesome.css">
 </head>
+
 <body>
-    <header class="b-header" >
+    <header class="b-header">
         <div class="all-wr">
-                <div class="b-header_line">
-                    <a class="b-header_logo">logo</a> 
-                    <p class="b-header_contact">+380637266043</p>
-                    <nav class="b-header_menu b-menu">
-                        <a  class="b-menu_link b-header_link__active">Главная</a>
-                        <a href="#directions"class="b-menu_link">Направления</a>
-                        <a class="b-menu_link">Расписание</a>
-                        <a href="#sertificates" class="b-menu_link ">Абонементы</a>
-                        <a  class="b-menu_link ">Галерея</a>
-                        <a href="#contacts" class="b-menu_link ">Контакты</a>
-                    </nav>   
+            <div class="b-header_line" >
+                <a class="b-header_logo">logo</a>
+                <p class="b-header_contact">+380637266043</p>
+                <nav class="b-header_menu  b-menu">  
+                    <ul class="b-menu_list">
+                        <li class="b-menu_li">
+                            <a href="#main" class="b-menu_link  b-header_link__active">Главная</a>
+                        </li>
+                        <li class="b-menu_li">
+                            <a href="#directions" class="b-menu_link">Направления</a>
+                        </li>
+                        <li class="b-menu_li">
+                            <a href="#timetable" class="b-menu_link">Расписание</a>
+                        </li>
+                        <li class="b-menu_li">
+                            <a href="#sertificates" class="b-menu_link ">Абонементы</a>
+                        </li>
+                        <li class="b-menu_li">
+                                <a class="b-menu_link ">Галерея</a>
+                        </li>
+                        <li class="b-menu_li">
+                            <a href="#footer" class="b-menu_link ">Контакты</a>
+                        </li>
+                    </ul>
+                    </nav>
+            </div>
+            <div id="headerLine" class="b-header_line b-header_line__mobile">
+                <a class="b-header_logo">logo</a>
+                <div class="b-header_links__mobile b-social_links">
+                    <li class="b-social_link ">
+                            <a href="" class="b-link  b-link__viber"></a>
+                    </li>
+                    <li class="b-social_link ">
+                        <a href="" class="b-link  b-link__inst "></a>
+                    </li>
+                    <li class="b-social_link ">
+                        <a href="" class="b-link  b-link__telegram"></a>
+                    </li>
                 </div>
-                <div class="b-header_slider b-slider">
-                    <div class="b-slide b-slide__current">
-                        <h1 class=" b-slide_heading b-slide_heading__1">Школа танцев на <span>кловской</span></h1>
-                        <div class=" b-slide_pic b-slide_pic__1">
-                            <div class=" b-slide_pic__green-o b-slide_pic__green-o__1"></div>
-                            <div class=" b-slide_pic__green-f b-slide_pic__green-f__1"></div>
-                            <div class=" b-slide_pic__woman b-slide_pic__woman__1"></div>
-                        </div>
-                        <p class="b-slide_text b-slide_text__1">Участвуйте в летних интенсивах на природе!и еще что-то там для вашего здоровья и тела</p>
-                        <button class="b-slide_button b-slide_button__1 b-button">Записаться</button>
-                        <div class="b-slide_lift">
-                            <div class="b-lift">
-                                <div class="b-lift_num-text">&#8212; 01</div>
-                                <ul class="b-lift_circles">
-                                    <li class="b-lift_circle b-lift_circle__active"></li>
-                                    <li class="b-lift_circle"></li>
-                                    <li class="b-lift_circle"></li>
-                                    <li class="b-lift_circle"></li>
-                                </ul>
-                            </div>
+                <nav class="b-header_menu b-header_menu__mobile  b-menu">
+                    <div class="b-header_open-button b-menu_button__mobile" id="openMenu"></div>
+                    <ul class="b-menu_list b-menu_list__mobile" id="mobileMenu">
+                        <li class="b-menu_li b-menu_li__mobile">
+                            <a href="#main" class="b-menu_link  b-header_link__active">Главная</a>
+                        </li>
+                        <li class="b-menu_li b-menu_li__mobile">
+                            <a href="#directions" class="b-menu_link">Направления</a>
+                        </li>
+                        <li class="b-menu_li b-menu_li__mobile">
+                            <a href="#timetable" class="b-menu_link">Расписание</a>
+                        </li>
+                        <li class="b-menu_li b-menu_li__mobile">
+                            <a href="#sertificates" class="b-menu_link ">Абонементы</a>
+                        </li>
+                        <li class="b-menu_li b-menu_li__mobile">
+                                <a class="b-menu_link ">Галерея</a>
+                        </li>
+                        <li class="b-menu_li b-menu_li__mobile">
+                            <a href="#footer" class="b-menu_link ">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="mainSlider" class="b-header_slider b-slider">
+                <div class="b-slide">
+                    <h1 class=" b-slide_heading b-slide_heading__1">Школа танцев на
+                        <span class="b-slide_heading__span">кловской</span>
+                    </h1>
+                    <div class=" b-slide_pic b-slide_pic__1">
+                        <div class=" b-slide_pic__green-o b-slide_pic__green-o__1"></div>
+                        <div class=" b-slide_pic__green-f b-slide_pic__green-f__1"></div>
+                        <div class=" b-slide_pic__woman b-slide_pic__woman__1"></div>
+                    </div>
+                    <p class="b-slide_text b-slide_text__1">Участвуйте в летних интенсивах на природе!и еще что-то там для вашего здоровья и тела</p>
+                    <button class="b-slide_button b-slide_button__1 b-button">Записаться</button>
+                    <div class="b-slide_lift">
+                        <div class="b-lift">
+                            <div class="b-lift_num-text">&#8212; 01</div>
+                            <ul class="b-lift_circles">
+                                <li class="b-lift_circle b-lift_circle__active"></li>
+                                <li class="b-lift_circle"></li>
+                                <li class="b-lift_circle"></li>
+                                <li class="b-lift_circle"></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="b-slide  ">
-                        <h1 class=" b-slide_heading b-slide_heading__2">Набор в новую группу для <span>детей</span></h1>
-                        <div class="b-slide_pic__2">
-                                <div class=" b-slide_pic__green-o b-slide_pic__green-o__2"></div>
-                                <div class=" b-slide_pic__green-f b-slide_pic__green-f__2"></div>
-                                <div class=" b-slide_pic__green-f b-slide_pic__green-f__2-2"></div>
-                                <div class=" b-slide_pic__woman b-slide_pic__woman__2"></div>
-                        </div>
-                        <p class=" b-slide_text b-slide_text__2">Участвуйте в летних интенсивах на природе!и еще что-то там для вашего здоровья и тела</p>
-                        <div class="b-slide_button"></div>
-                        <div class="b-slide_lift">
-                            <div class="b-lift">
-                                <div class="b-lift_num-text">&#8212; 02</div>
-                                <ul class="b-lift_circles">
-                                    <li class="b-lift_circle "></li>
-                                    <li class="b-lift_circle b-lift_circle__active"></li>
-                                    <li class="b-lift_circle"></li>
-                                    <li class="b-lift_circle"></li>
-                                </ul>
-                            </div>
-                        </div>
+                </div>
+                <div class="b-slide b-slide__current ">
+                    <h1 class=" b-slide_heading b-slide_heading__2">Набор в новую группу для
+                        <span class="b-slide_heading__span">детей</span>
+                    </h1>
+                    <div class="b-slide_pic__2">
+                        <div class=" b-slide_pic__green-o b-slide_pic__green-o__2"></div>
+                        <div class=" b-slide_pic__green-f b-slide_pic__green-f__2"></div>
+                        <div class=" b-slide_pic__green-f b-slide_pic__green-f__2-2"></div>
+                        <div class=" b-slide_pic__woman b-slide_pic__woman__2"></div>
                     </div>
-                    <div class="b-slide ">
-                        <h1 class="b-slide_heading b-slide_heading__3">Школа танцев на <span>кловской</span></h1>
-                        <div class="b-slide_pic__3">
-                                <div class=" b-slide_pic__green-o b-slide_pic__green-o__3"></div>
-                                <div class=" b-slide_pic__green-f b-slide_pic__green-f__3"></div>
-                                <div class=" b-slide_pic__woman b-slide_pic__woman__3"></div>
-                        </div>
-                        <p class=" b-slide_text b-slide_text__3">Участвуйте в летних интенсивах на природе!и еще что-то там для вашего здоровья и тела</p>
-                        <div class="b-slide_button"></div>
-                        <div class="b-slide_lift">
-                            <div class="b-lift">
-                                <div class="b-lift_num-text">&#8212; 03</div>
-                                <ul class="b-lift_circles">
-                                    <li class="b-lift_circle"></li>
-                                    <li class="b-lift_circle"></li>
-                                    <li class="b-lift_circle b-lift_circle__active"></li>
-                                    <li class="b-lift_circle"></li>
-                                </ul>
-                            </div>
+                    <p class=" b-slide_text b-slide_text__2">Участвуйте в летних интенсивах на природе!и еще что-то там для вашего здоровья и тела</p>
+                    <button class="b-slide_button b-slide_button__1 b-button">Записаться</button>
+                    <div class="b-slide_lift">
+                        <div class="b-lift">
+                            <div class="b-lift_num-text">&#8212; 02</div>
+                            <ul class="b-lift_circles">
+                                <li class="b-lift_circle "></li>
+                                <li class="b-lift_circle b-lift_circle__active"></li>
+                                <li class="b-lift_circle"></li>
+                                <li class="b-lift_circle"></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="b-header_links">
-                    <li class="b-header_link "><a  href="" class="b-link  b-link__inst"></a></li>
-                    <li class="b-header_link "><a href="" class="b-link  b-link__viber"></a></li>
-                    <li class="b-header_link "><a href="" class="b-link  b-link__telegram"></a></li>
-                </div>
+                <!-- <div class="b-slide ">
+                    <h1 class="b-slide_heading b-slide_heading__3">Школа танцев на
+                        <span>кловской</span>
+                    </h1>
+                    <div class="b-slide_pic__3">
+                        <div class=" b-slide_pic__green-o b-slide_pic__green-o__3"></div>
+                        <div class=" b-slide_pic__green-f b-slide_pic__green-f__3"></div>
+                        <div class=" b-slide_pic__woman b-slide_pic__woman__3"></div>
+                    </div>
+                    <p class=" b-slide_text b-slide_text__3">Участвуйте в летних интенсивах на природе!и еще что-то там для вашего здоровья и тела</p>
+                    <div class="b-slide_button"></div>
+                    <div class="b-slide_lift">
+                        <div class="b-lift">
+                            <div class="b-lift_num-text">&#8212; 03</div>
+                            <ul class="b-lift_circles">
+                                <li class="b-lift_circle"></li>
+                                <li class="b-lift_circle"></li>
+                                <li class="b-lift_circle b-lift_circle__active"></li>
+                                <li class="b-lift_circle"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="b-header_slider__mobile b-slider__mobile">
+                <h1 class="b-slide_heading  b-slide_heading__mobile">Школа танцев на
+                    <span class="b-slide_heading__span">кловской</span>
+                </h1>
+                <p class=" b-slide_text b-slide_text__mobile ">Погрузитесь в мир танца и исскуства с нашей студией. </p>
+                <button class="b-slide_button b-slide_button__mobile">Записаться</button>
+            </div>
+            <div class="b-header_links b-social_links">
+                <li class="b-social_link ">
+                        <a href="" class="b-link  b-link__viber"></a>
+                </li>
+                <li class="b-social_link ">
+                    <a href="" class="b-link  b-link__inst "></a>
+                </li>
+                <li class="b-social_link ">
+                    <a href="" class="b-link  b-link__telegram"></a>
+                </li>
+            </div>
         </div>
     </header>
     <div class="b-block main">
         <div class="all-wr">
-            <h2 class="b-block_heading" id="directions">Направления</h2> 
+            <h2 class="b-block_heading" id="directions">Направления</h2>
             <section class="main_article b-article">
+                <div class="b-article_pic b-article_pic__1"></div>
                 <div class="b-article_description">
                     <h3 class="b-article_heading">Балет для взрослых</h3>
-                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
+                    <p class="b-article_text">Заниматься балетом вместо фитнеса сегодня — настоящий тренд. Это красиво, стильно и невероятно женственно.  Балет для взрослых в нашей школе в Киеве  и для начинающих,  и для тех, кто уже занимался и хочет повысить свои навыки. <br> <br>
+                        Занятия для взрослых  являются  адаптированным комплексом упражнений  для любого возраста на основе классической хореографии. Боди балет развивает гибкость суставов, позвоночника, формирует красивую осанку. А главным плюсом данного урока является возможность научиться искусству владения собственным телом. Невероятная грациозность движений под классическую музыку, захватывающую дух, не оставит никого равнодушным.
+                        </p>
                     <button class="b-article_button button">Подробнее</button>
                 </div>
-                <div class="b-article_pic b-article_pic__1"></div>
+                
             </section>
             <section class="main_article b-article">
+                <div class="b-article_pic b-article_pic__2"></div>
                 <div class="b-article_description">
                     <h3 class="b-article_heading">Классика для детей</h3>
-                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
+                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt.
+                        Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et
+                        ad?2</p>
                     <button class="b-article_button  button">Подробнее</button>
                 </div>
-                <div class="b-article_pic b-article_pic__2"></div>
+                
             </section>
             <section class="main_article b-article">
+                <div class="b-article_pic b-article_pic__3"></div>
                 <div class="b-article_description">
                     <h3 class="b-article_heading">Стретчинг</h3>
-                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
+                    <p class="b-article_text">Комплекс упражнений, направленный на растяжку, гибкость и эластичность мышц. <br> Cтретчинг  в нашей студии – это синтез балетной и аэробной растяжки. <br> Такие тренировки полезны в любом возрасте и подходят людям с разной степенью физической подготовки. Мы обеспечим оптимальный уровень нагрузки и максимальный результат именно для Вас.</p>
                     <button class="b-article_button  button">Подробнее</button>
                 </div>
-                <div class="b-article_pic b-article_pic__3"></div>
             </section>
             <section class="main_article b-article">
+                <div class="b-article_pic b-article_pic__4"></div>
                 <div class="b-article_description">
                     <h3 class="b-article_heading">Современный танец</h3>
-                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
+                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt.
+                        Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et
+                        ad?2</p>
                     <button class="b-article_button  button">Подробнее</button>
                 </div>
-                <div class="b-article_pic b-article_pic__4"></div>
+                
             </section>
             <section class="main_article b-article">
+                <div class="b-article_pic b-article_pic__5"></div>
                 <div class="b-article_description">
                     <h3 class="b-article_heading">Партерный тренаж</h3>
-                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
+                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt.
+                        Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et
+                        ad?2</p>
                     <button class="b-article_button  button">Подробнее</button>
                 </div>
-                <div class="b-article_pic b-article_pic__5"></div>
+                
             </section>
             <section class="main_article b-article">
+                <div class="b-article_pic b-article_pic__6"></div>
                 <div class="b-article_description">
                     <h3 class="b-article_heading">Занятия на природе</h3>
-                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt. Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et ad?2</p>
+                    <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt.
+                        Odit libero error alias porro ex temporibus! Possimus consequuntur, sapiente accusantium minus et
+                        ad?2</p>
                     <button class="b-article_button  button">Подробнее</button>
                 </div>
-                <div class="b-article_pic b-article_pic__6"></div>
             </section>
         </div>
 
@@ -159,44 +247,129 @@
             <div class="b-block_item-container">
                 <div class="b-block_item item">
                     <div class="item_class">1 занятие</div>
-                    <div class="item_price"><span class="item_price__bold">100</span><br>грн</div>
-                    <div class="item_button button">Купить</div>
+                    <div class="item_price">
+                        <span class="item_price__bold">100</span>
+                        <br>грн</div>
+                    <button  class="item_button button"> Купить</button>
                 </div>
                 <div class="b-block_item item">
                     <div class="item_class">4 занятий</div>
-                    <div class="item_price"><span  class="item_price__bold">350</span><br>грн</div>
-                    <div class="item_button button">Купить</div>
+                    <div class="item_price">
+                        <span class="item_price__bold">350</span>
+                        <br>грн</div>
+                    <button  class="item_button button"> Купить</button>
                 </div>
                 <div class="b-block_item item">
                     <div class="item_class">8 занятий</div>
-                    <div class="item_price"><span class="item_price__bold">650</span><br>грн</div>
-                    <div class="item_button button">Купить</div>
+                    <div class="item_price">
+                        <span class="item_price__bold">650</span>
+                        <br>грн</div>
+                    <button  class="item_button button"> Купить</button>
                 </div>
                 <div class="b-block_item item">
                     <div class="item_class">12 занятий</div>
-                    <div class="item_price"><span class="item_price__bold">850</span><br>грн</div>
-                    <div class="item_button button">Купить</div>
+                    <div class="item_price">
+                        <span class="item_price__bold">850</span>
+                        <br>грн</div>
+                        <button  class="item_button button"> Купить</button>
+                    </div>
                 </div>
-            </div>
-            
+            <p class="b-block_text">* Пробное занятие 50 грн </p>
         </div>
     </div>
     <div class="b-block">
-        <div name="conacts" class="b-block_form">
-            <form action="" class="b-form" name="user">
-                <h2 class="b-form_heading">JОставьте заявку<span class="b-form_heading__small">на ваше первое занятие</span></h2>
-                <input id="input-name" type="text" class="b-form_input" name="name" placeholder="Введите имя"><label for="input-name">Ваше имя</label>
-                <input id="input-phone" type="text" class="b-form_input" name="phone" placeholder="Введите телефон"><label for="input-phone">Контактный телефон</label>
-                <input class="b-form_input__button" type="submit" name="submit" value="Отправить" id="form-button" />
-            </form>
+        <div class="all-wr">
+            <h2 id="timetable" class="b-block_heading">Расписание</h2>
+            <div class="b-block_timetable">
+                <table class="b-block_table table">
+                    <tr class="table_line">
+                        <td class="table_col table_col__left">Балет</td>
+                        <td class="table_col table_col__days">Пн / Ср / Пт</td>
+                        <td class="table_col table_col__right">19:00 - 20:00</td>
+                    </tr>
+                    <tr class="table_line">
+                        <td class="table_col table_col__left">Балет
+                            <span class=" table_span table_span__details "> (для начинающих)</span>
+                        </td>
+                        <td class="table_col table_col__days">Чт / Пт</td>
+                        <td class=" table_col table_col__right">19:15 - 20:15</td>
+                    </tr>
+                    <tr class="table_line">
+                        <td class="table_col table_col__left">Стретчинг</td>
+                        <td class="table_col table_col__days">Пн / Ср / Пт</td>
+                        <td class=" table_col table_col__right">20:00 - 21:00</td>
+                    </tr>
+                    <tr class="table_line">
+                        <td class="table_col table_col__left">Партерный тренаж</td>
+                        <td class="table_col table_col__days">Сб</td>
+                        <td class=" table_col table_col__right">17:00 - 18:00</td>
+                    </tr>
+                    <tr class="table_line">
+                        <td class="table_col table_col__left">Современный танец</td>
+                        <td class="table_col table_col__days">Сб</td>
+                        <td class=" table_col table_col__right">18:00 - 19:00</td>
+                    </tr>
+                    <tr class="table_line">
+                        <td class="table_col table_col__left">Занятия на природе
+                            <span class="table_span table_span__details"> (м. Гидропарк)</span>
+                        </td>
+                        <td class="table_col table_col__days">Вс</td>
+                        <td class=" table_col table_col__right">10:00 - 11:00</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        
     </div>
-    <footer class="b-footer">
+    <div class="b-block feedback">
+        <div class="all-wr">
+            <h2 id="submit" class="b-block_heading">Воплотите Вашу мечту в любом возрасте!</h2>
+            <p class="b-block_text__feedback">Оставьте контактные данные и мы свяжемся с вами за 30 минут.</p>
+            <div class="b-block_form">
+                <form action="" class="b-form" name="user">
+                    <h2 class="b-form_heading">Оставьте заявку</h2>
+                    <p class="b-form_heading__small">на Ваше первое занятие</p>
+                    <label class="b-form_label" for="input-name">Ваше имя</label>
+                    <input id="input-name" type="text" class="b-form_input" name="name" placeholder="Введите имя">
+
+                    <label class="b-form_label" for="input-phone">Контактный телефон</label>
+                    <input id="input-phone" type="text" class="b-form_input" name="phone" placeholder="Введите телефон">
+                    <input class="b-form_input__button" type="submit" name="submit" value="Отправить" id="form-button" />
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="b-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.0195561993114!2d30.53573451519005!3d50.440736395946644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa9790f29a5%3A0xe7aaa2bfcabd296a!2z0JrQu9C-0LLRgdC60LjQuSDRgdC_0YPRgdC6LCA4LCDQmtC40LXQsiwgMDEwMjE!5e0!3m2!1sru!2sua!4v1530915208572"
+            width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <footer id="footer" class="b-footer footer">
+        <div class="all-wr">
+            <div class="b-block_footer">
+                <h4 class="footer_heading">Dance Studio 2018</h4>
+                <p class="footer_text">
+                    Студия Валерии Шамрий
+                    <br>м.Кловская/м.Арсенальная
+                    <br>Кловский спуск, 8, аудитория 305
+                    <br>телефон: +3806500078
+                    <br>email: val@gmail.com
+                    <br>
+                </p>
+                <div class="b-footer_links b-social_links">
+                    <li class="b-social_link ">
+                            <a href="" class="b-link  b-link__viber"></a>
+                    </li>
+                    <li class="b-social_link ">
+                        <a href="" class="b-link  b-link__inst "></a>
+                    </li>
+                    <li class="b-social_link ">
+                        <a href="" class="b-link  b-link__telegram"></a>
+                    </li>
+                </div>
+            </div>
+        </div>
     </footer>
-    
+
     <script src="js/main.js"></script>
-<!-- <script src="js/FormSender.js"></script>  -->  
+    <!-- <script src="js/FormSender.js"></script>  -->
 </body>
-
-
