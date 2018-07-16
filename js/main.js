@@ -73,3 +73,37 @@ anchors.forEach(function(item) {
     }, animationTime / framesCount);
   });
 });
+/* 
+function toggle(el) {
+  el.style.display = (el.style.display == 'none') ? '' : 'none'
+  }
+   */
+var mainSlider = document.getElementById("mainSlider");
+var headerLine = document.getElementById("headerLine");
+ var menuStyle = getComputedStyle(mobileMenu);
+ var menuList = [].slice.call(document.getElementsByClassName("b-menu_li__mobile"));
+window.onload = function(){
+  openMenu.onclick = function (){
+    if (menuStyle.display == "none"){
+      mobileMenu.classList.add("b-menu_list__active");
+    }
+    else
+    mobileMenu.classList.remove("b-menu_list__active"); 
+  };
+
+  menuList.forEach(function(item){
+    item.addEventListener('click', function(){
+      if (mobileMenu.classList.contains("b-menu_list__active"))
+        mobileMenu.classList.remove("b-menu_list__active");
+    });
+  });
+ 
+};
+
+var buttonsArr = [].slice.call(document.getElementsByTagName("button"));
+var formaBlock = document.getElementById("submit");
+buttonsArr.forEach(function(item){
+  item.addEventListener('click',function(){
+    formaBlock.scrollIntoView();
+  });
+});
