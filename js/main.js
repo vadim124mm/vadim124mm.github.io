@@ -1,14 +1,4 @@
-var slider = document.getElementsByClassName("b-slide");
-var currentSlide = 0;
 
-
-function nextSlide(){
-    slider[currentSlide].className ="b-slide";
-    currentSlide = (currentSlide+1)%slider.length;
-    slider[currentSlide].className = "b-slide b-slide__current";
-}
-var slideInterval = setInterval(nextSlide, 3500);
-console.log(slider[0].className);
 
 
 var form = document.forms.user;
@@ -107,3 +97,71 @@ buttonsArr.forEach(function(item){
     formaBlock.scrollIntoView();
   });
 });
+
+
+/* slider
+var slider = document.getElementsByClassName("b-slide");
+var currentSlide = 0;
+
+
+function nextSlide(){
+    slider[currentSlide].className ="b-slide";
+    currentSlide = (currentSlide+1)%slider.length;
+    slider[currentSlide].className = "b-slide b-slide__current";
+}
+var slideInterval = setInterval(nextSlide, 3500);
+console.log(slider[0].className);
+
+*/
+
+var slideWidth = 1000;
+var sliderList = document.querySelector(".b-slider_slides-wrapper");
+var slides = document.querySelectorAll(".b-slider_slide");
+var btnPrev = document.querySelector(".b-slider_arrow__prev");
+var btnNext = document.querySelector(".b-slider_arrow__next");
+var pos = 0;
+
+sliderList.style.width = slides.length * slideWidth + 'px';
+btnPrev.onclick = scrollToPrev;
+btnNext.onclick = scrollToNext;
+
+
+function scrollToPrev() {
+  pos--;
+
+  if (pos < 0) {
+    var children = sliderList.children;
+
+    sliderList.style.transition = null;
+    sliderList.style.left = -(pos + 2) * slideWidth + 'px';
+    sliderList.insertBefore(children[slides.length - 1], children[0]);
+    pos++;
+   }
+  requestAnimationFrame(function(){ //ожидаем следующего запланированного reflow/repain;
+    requestAnimationFrame(function(){ 
+      //предыдущий reflow рассчитал новый dom элемент
+      //можно делать анимацию.
+      sliderList.style.transition = 'left 0.6s ease-in-out';
+      sliderList.style.left = -(slideWidth * pos) + 'px';
+    })
+  });
+}
+function scrollToNext() {
+  pos++;
+  
+  if (pos > slides.length -1) {
+    var children = sliderList.children;
+    sliderList.style.transition = null;
+    sliderList.style.left = -(pos - 2) * slideWidth + 'px';
+    sliderList.appendChild(children[0]);
+    pos--;
+  }
+  requestAnimationFrame(function(){ //ожидаем следующего запланированного reflow/repain;
+    requestAnimationFrame(function(){ 
+      //предыдущий reflow рассчитал новый dom элемент
+      //можно делать анимацию.
+      sliderList.style.transition = 'left 0.6s ease-in-out';
+      sliderList.style.left = -(slideWidth * pos) + 'px';
+    })
+  });
+}
