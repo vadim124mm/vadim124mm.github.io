@@ -1,30 +1,4 @@
 
-
-
-var form = document.forms.user;
-var personName = form.elements["name"];
-var personPhone = form.elements["phone"];
-
-var button = document.getElementById("form-button");
-
-form.submit.addEventListener("click", sendRequest);
-
-function sendRequest(event){
-     
-    event.preventDefault();
-
-var xhr = new XMLHttpRequest();
-function reqReadyStateChange() {
-    if (xhr.readyState == 4 && xhr.status == 200)
-        document.getElementById("output").innerHTML=xhr.responseText;
-}
-var body = "Name=" + personName.value + "&Phone="+ personPhone.value + "&ChatID=-1001371152946";
-xhr.open("POST", "https://cors-anywhere.herokuapp.com/http://telegramsender.somee.com/api/values");
-xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-xhr.onreadystatechange = reqReadyStateChange;
-xhr.send(body);
-}
-
 /* var sectionPics = document.getElementsByClassName("b-section_pic");
 for(i=0; i<sectionPics.length; i++){
     if (i%2==0){
