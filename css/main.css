@@ -722,6 +722,10 @@ body {
     margin-bottom: 10px;
     padding-left: 35px;
     letter-spacing: 0.3px; }
+#loading{
+	margin: 0 auto;
+	width: 55px;
+	margin-top: -55px;}
 
 .b-map {
   max-height: 400px; }
