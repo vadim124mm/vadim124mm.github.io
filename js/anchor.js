@@ -1,12 +1,4 @@
 
-/* var sectionPics = document.getElementsByClassName("b-section_pic");
-for(i=0; i<sectionPics.length; i++){
-    if (i%2==0){
-        sectionPics[i].style.float="left";
-    }  
-    else
-        sectionPics[i].style.float="right";
-}; */
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
       animationTime = 300,
       framesCount = 20;
@@ -72,19 +64,4 @@ buttonsArr.forEach(function(item){
   });
 });
 
-
-/* slider
-var slider = document.getElementsByClassName("b-slide");
-var currentSlide = 0;
-
-
-function nextSlide(){
-    slider[currentSlide].className ="b-slide";
-    currentSlide = (currentSlide+1)%slider.length;
-    slider[currentSlide].className = "b-slide b-slide__current";
-}
-var slideInterval = setInterval(nextSlide, 3500);
-console.log(slider[0].className);
-
-*/
 

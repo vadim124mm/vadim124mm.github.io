@@ -19,9 +19,13 @@
     <link href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/poppy.js"></script>
 </head>
 
 <body>
+        
     <header class="b-header"> 
         <div class="all-wr">
             <div class="b-header_line" >
@@ -116,20 +120,75 @@
                 
    
     </header>
-
+   
     <div class="b-block main">
             <div class="all-wr">
                 <h2 class="b-block_heading" id="directions">Направления</h2>
                 
+                <div class="poppy" id="popup-1">
+                        <div class="popp_pic_1"></div>
+                        <div class="popp_description">
+                        <h3 class="b-article_heading">Боди-балет для взрослых</h3>
+                        <p class="popp_text">Заниматься балетом вместо фитнеса сегодня — настоящий тренд. 
+                        Это красиво, стильно и невероятно женственно.</p>
+                        <button class="b-article_button  button">Записаться</button>   
+                </div>
+            </div>
+                <div class="poppy" id="popup-2">
+                        <div class="popp_pic_2"></div>
+                        <div class="popp_description">
+                                <h3 class="b-article_heading">Классика для детей</h3>
+                                <p class="popp_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt.</p>
+                                <button class="b-article_button  button">Записаться</button>   
+                            </div>
+                </div>
+                <div class="poppy" id="popup-3">
+                    <div class="popp_pic_3"></div>
+                    <div class="popp_description">
+                        <h3 class="b-article_heading">Стретчинг</h3>
+                        <p class="popp_text">Комплекс упражнений, направленный на растяжку, гибкость и эластичность мышц.</p>
+                        <button class="b-article_button  button">Записаться</button>
+                    </div>
+                </div>
+                <div class="poppy" id="popup-4">
+                    <div class="popp_pic_4"></div>
+                    <div class="popp_description">
+                        <h3 class="b-article_heading">Современный танец</h3>
+                        <p class="popp_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo</p>
+                        <button class="b-article_button  button">Записаться</button>
+                    </div>
+                </div>
+                <div class="poppy" id="popup-5">
+                    <div class="popp_pic_5"></div>
+                    <div class="popp_description">
+                        <h3 class="b-article_heading">Партерный тренаж</h3>
+                        <p class="popp_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt.</p>
+                        <button class="b-article_button  button">Записаться</button>
+                    </div>
+                </div>
+                
+                <div class="poppy" id="popup-6">
+                    <div class="popp_pic_6"></div>
+                    <div class="popp_description">
+                        <h3 class="b-article_heading">Занятия на природе</h3>
+                        <p class="popp_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt.</p>
+                        <button class="b-article_button  button">Записаться</button>
+                    </div>
+                </div>
+        
                         <div class="slick_slider">
 
                         <div>
-                           
                             <div class="b-article_pic b-article_pic__1"></div>
                               <div class="b-article_description">
                                 <h3 class="b-article_heading">Боди-балет для взрослых</h3>
                                 <p class="b-article_text">Заниматься балетом вместо фитнеса сегодня — настоящий тренд. Это красиво, стильно и невероятно женственно.</p>
-                                <button class="b-article_button button">Подробнее</button>
+                                <button class="b-article_button button btn1">Подробнее</button> 
+                                <script>
+                                        $(".btn1").poppy("popup-1");
+                                      
+                                   </script>
+                               
                             </div>
                   
                         </div>
@@ -140,7 +199,11 @@
                               <div class="b-article_description">
                                 <h3 class="b-article_heading">Классика для детей</h3>
                                 <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt.</p>
-                                <button class="b-article_button  button">Подробнее</button>
+                                <button class="b-article_button button btn2">Подробнее</button> 
+                                <script>
+                                        $(".btn2").poppy("popup-2");
+                                      
+                                   </script>
                             </div>
                          
                         </div>
@@ -150,7 +213,11 @@
                             <div class="b-article_description">
                                 <h3 class="b-article_heading">Стретчинг</h3>
                                 <p class="b-article_text">Комплекс упражнений, направленный на растяжку, гибкость и эластичность мышц.</p>
-                                <button class="b-article_button  button">Подробнее</button>
+                                <button class="b-article_button button btn3">Подробнее</button> 
+                                <script>
+                                        $(".btn3").poppy("popup-3");
+                                      
+                                   </script>
                             </div>
                         </div>
                         
@@ -159,7 +226,11 @@
                               <div class="b-article_description">
                                 <h3 class="b-article_heading">Современный танец</h3>
                                 <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo</p>
-                                <button class="b-article_button  button">Подробнее</button>
+                                <button class="b-article_button button btn4">Подробнее</button> 
+                                <script>
+                                        $(".btn4").poppy("popup-4");
+                                      
+                                   </script>
                             </div>
                          </div>
 
@@ -168,7 +239,11 @@
                               <div class="b-article_description">
                                 <h3 class="b-article_heading">Партерный тренаж</h3>
                                   <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt.</p>
-                                   <button class="b-article_button  button">Подробнее</button>
+                                  <button class="b-article_button button btn5">Подробнее</button> 
+                                  <script>
+                                          $(".btn5").poppy("popup-5");
+                                        
+                                     </script>
                                 </div>
                          </div>
             
@@ -177,7 +252,11 @@
                                 <div class="b-article_description">
                                     <h3 class="b-article_heading">Занятия на природе</h3>
                                     <p class="b-article_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur? Saepe rerum et nisi? Odit, deserunt.</p>
-                                    <button class="b-article_button  button">Подробнее</button>
+                                    <button class="b-article_button button btn6">Подробнее</button> 
+                                    <script>
+                                            $(".btn6").poppy("popup-6");
+                                          
+                                       </script>
                                 </div>
                           </div>
                    </div>
@@ -280,7 +359,7 @@
                     <label class="b-form_label" for="input-phone">Контактный телефон</label>
                     <input id="input-phone" type="text" class="b-form_input" name="phone" placeholder="Введите телефон">
                     <input class="b-form_input__button" type="submit" name="submit" value="Отправить" id="form-button" />
-                     <div id="loading" style="display:none"><img src="Ellipsis.gif" /></div>
+                     <div id="loading" style="display:none"><img src="img/Ellipsis.gif" /></div>
                 </form>
             </div>
         </div>
@@ -317,11 +396,9 @@
         </div>
     </footer>
 
-
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
+   
+    <script src="slick/slick.min.js"></script>
     <script src="js/slider.js"></script>
-    <script src="js/anchor.js"></script>
+   <!-- <script src="js/anchor.js"></script> -->
     <script src="js/FormSender.js"></script> 
 </body>

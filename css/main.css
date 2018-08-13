@@ -553,7 +553,7 @@ body {
               @media (max-width: 415px) {
                 .b-article_pic__5  {
                   background-position-x: 36px; } }
-
+                  @media (max-width: 376px) {
                 .b-article_pic__5  {
                   background-position-x: 33px; 
                   -webkit-background-size: auto 235px;
@@ -791,3 +791,144 @@ body {
     color: #474747; }
     .b-footer_links a:hover {
       color: #BCEC00; }
+
+    .poppy {
+        position: absolute;
+        z-index: 999;
+        background-color: #f2f2f2;
+        border: 1px solid #eee;
+        box-shadow: 2px 2px 8px 2px rgba(0,0,0,0.2);
+        padding: 30px 30px 60px 30px;
+        border-radius: 3px;
+        width:50%;
+       
+      }
+      @media (max-width: 1000px) {
+        .poppy {
+          
+          width:80%;
+          margin-left: -15%;
+          padding: 35px 5px 35px 5px;
+        }
+      }
+
+
+       
+      .close-btn {
+        height: 15px;
+        width: 15px;
+        border-radius: 15px;
+        margin: 5px -10px;
+        float: right;
+        background-color: #BC5B46;
+        content: "";
+        cursor: pointer;
+      }
+      
+      #poppyScreen {
+        background-color: #000;
+        position: absolute;
+        z-index: 998;
+        height: 438%;
+        width: 100%;
+        opacity: 0.3;
+        display: none;
+      }
+      .popp_text {
+        margin-bottom: 35px;
+      font-size: 15px ;
+      text-align: center; }
+      .popp_description
+      {
+        text-align: center;
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto ;
+      }
+ 
+      
+      .popp_pic_1 {
+        background-image: url(../img/1.png);
+        background-repeat: no-repeat;
+        -webkit-background-size: 320px auto;
+                background-size: 320px auto;
+        background-position-y: center; 
+        background-position-x: center;
+        height: 320px;} 
+        @media (max-width: 1000px) {
+          .popp_pic_1 {
+            display: none;
+          }
+        }
+
+
+        .popp_pic_2 {
+          background-image: url(../img/2.png);
+          background-repeat: no-repeat;
+          -webkit-background-size: auto 300px;
+                  background-size: auto 300px;
+                  background-position-y: center; 
+                  background-position-x: center;
+          height: 320px;
+        }
+        @media (max-width: 1000px) {
+          .popp_pic_2 {
+             display: none;
+          }
+        }
+
+          .popp_pic_3 {
+            background-image: url(../img/3.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: 260px auto;
+              background-size: 260px auto;
+              background-position-y: center; 
+                  background-position-x: center;
+      height: 320px; }
+      @media (max-width: 1000px) {
+        .popp_pic_3 {
+           display: none;
+        }
+      }
+
+            .popp_pic_4 {
+              background-image: url(../img/4.png);
+              background-repeat: no-repeat;
+              -webkit-background-size: auto 300px;
+                      background-size: auto 300px;
+                      background-position-y: center; 
+                      background-position-x: center;
+                      height: 320px;  }
+                      @media (max-width: 1000px) {
+                        .popp_pic_4 {
+                           display: none;
+                        }
+                      }
+
+              .popp_pic_5 {
+                background-image: url(../img/5.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: 325px auto;
+              background-size: 325px auto;
+              background-position-y: center; 
+                  background-position-x: center;
+              height: 320px;  }
+              @media (max-width: 1000px) {
+                .popp_pic_5 {
+                   display: none;
+                }
+              }
+
+                .popp_pic_6 {
+                  background-image: url(../img/6.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: auto 300px;
+              background-size: auto 300px;
+              background-position-y: center; 
+                  background-position-x: center;
+                 height: 320px; }
+                 @media (max-width: 1000px) {
+                  .popp_pic_6 {
+                     display: none;
+                  }
+                }
