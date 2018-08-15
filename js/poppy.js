@@ -15,7 +15,10 @@
             $("#poppyScreen, .poppy").fadeOut();
         }
         $(".close-btn, #poppyScreen").on("click",function(){
-            closePoppy();
+            closePoppy(); 
+        });
+        $(".close-form, #poppyScreen").on("click",function(){
+            closePoppy(); 
         });
         resize();
         $(window).resize(function() {
