@@ -29,11 +29,11 @@ anchors.forEach(function(item) {
     }, animationTime / framesCount);
   });
 });
-/* 
-function toggle(el) {
+ 
+/* function toggle(el) {
   el.style.display = (el.style.display == 'none') ? '' : 'none'
-  }
-   */
+  } */
+  
 var mainSlider = document.getElementById("mainSlider");
 var headerLine = document.getElementById("headerLine");
  var menuStyle = getComputedStyle(mobileMenu);
@@ -63,5 +63,5 @@ buttonsArr.forEach(function(item){
     formaBlock.scrollIntoView();
   });
 });
-
+ 
 
