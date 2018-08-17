@@ -1,8 +1,8 @@
 
 var feed = new Instafeed({
         get: "user",
-        userId: "418109415",
-        accessToken: "418109415.1677ed0.cf302d8e07ec4ec99939c3d138fd1a4d",
+        userId: "5950189448",
+        accessToken: "5950189448.1677ed0.ae2f442e38304197b5029c7399621a54",
         template: '<div><a href="{{link}}"><img src="{{image}}" /></a></div>',
         resolution: 'standard_resolution',
         after: function () {
