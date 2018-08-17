@@ -9,6 +9,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none; }
+  a[href^=tel] {
+    text-decoration:inherit;
+    color: inherit;
+    }
 
 body {
   font-family: Montserrat, Arial, sans-serif;
@@ -37,7 +41,11 @@ body {
       .b-block_heading {
         margin-bottom: 70px; } }
   .b-block_text {
-    font: 300 20px Montserrat; }
+    padding-left: 20px;
+    font: 300 16px Montserrat; }
+    @media (max-width: 375px) {
+      .b-block_text {
+        font: 300 14px Montserrat; } }
     .b-block_text__feedback {
       margin-top: -75px;
       text-align: center;
@@ -250,12 +258,12 @@ body {
 @media (max-width: 976px) {
   .b-menu_list__mobile {
     display: none;
-    background: #a1855c;
+    background: #4b3d29;
     position: absolute;
     top: 40px;
     z-index: 3;
     width: 100%;
-    padding: 10px 0;
+    padding: 80px 0;
     left: 0;
     right: 0; } }
 
@@ -328,6 +336,8 @@ body {
     content: '\e902'; }
   .b-link__telegram:after {
     content: '\e901'; }
+  .b-link__facebook:after {
+      content: '\ea90'; }
 
 .main {
   overflow: hidden;
@@ -582,24 +592,26 @@ body {
     .b-article_pic__6 {
       background-image: url(../img/6.png);
       background-repeat: no-repeat;
-      -webkit-background-size: auto 300px;
-              background-size: auto 300px;
-              background-position-x: center;
+      -webkit-background-size: auto 275px;
+              background-size: auto 275px;
+              background-position-x: 140px;
                  height: 320px; }
                  @media (max-width: 415px) {
                   .b-article_pic__6  {
-                    background-position-x: 75px; 
+                    background-position-x: 40px; 
                     } }
                  @media (max-width: 376px) {
                   .b-article_pic__6  {
-                    background-position-x: 60px; 
+                    background-position-x: 22px; 
                     } }
                  @media (max-width: 361px) {
                   .b-article_pic__6  {
-                    background-position-x: 62px; } }
+                    background-position-x: 35px;
+                   } }
                     @media (max-width: 350px) {
                       .b-article_pic__6  {
-                        background-position-x: 37px; 
+                        background-position-x: 13px; 
+                       
                         } }
                        
                         
@@ -625,11 +637,32 @@ body {
 	&:last-child
 		margin-right: 0px; */
 .item {
-  min-width: 220px;
+  width: 220px;
   height: 300px;
   background-color: #f2f2f2;
   padding: 45px 0;
   text-align: center; }
+  @media (max-width: 950px) {
+    .item {
+      width: 200px;
+    }
+    }
+    @media (max-width: 880px) {
+      .item {
+        width: 180px;
+      }
+      }
+      @media (max-width: 790px) {
+        .item {
+          width: 290px;
+        }
+        }
+        @media (max-width: 650px) {
+          .item {
+            width: 240px;
+          }
+          }
+
   .item_button {
     margin: 0 auto; 
     font: 500 12px Montserrat;}
@@ -647,7 +680,10 @@ body {
   max-width: 720px;
   margin: 0 auto;
   padding: 50px 10px; }
-
+  .timeblock{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 .table {
   max-width: 720px;
   -webkit-box-sizing: border-box;
@@ -962,3 +998,47 @@ body {
                      display: none;
                   }
                 }
+
+                #instafeed a img{
+                  width:280px;
+                  background-position-x: center;
+                 }
+                 @media (max-width: 1165px) {
+                  #instafeed a img {
+                    width:250px;
+                  }
+                }
+                @media (max-width: 1055px) {
+                  #instafeed a img {
+                    width:230px;
+                  }
+                }
+                @media (max-width: 960px) {
+                  #instafeed a img {
+                    width:210px;
+                  }
+                }
+                @media (max-width: 760px) {
+                  #instafeed a img {
+                    width:280px;
+                  }
+                }
+                @media (max-width: 700px) {
+                  #instafeed a img {
+                    width:250px;
+                  }
+                }
+                @media (max-width: 630px) {
+                  #instafeed a img {
+                    width:280px;
+                  }
+                }
+               
+
+                 #gallery{
+                   margin-bottom: 10px;
+                 }
+                 .insta{
+                   overflow: hidden;
+                 }
+                 
