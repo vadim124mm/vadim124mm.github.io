@@ -810,6 +810,7 @@ body {
       margin-bottom: 40px;
       letter-spacing: 0.3px; }
   .b-form_input {
+    -webkit-appearance: none;
     width: 260px;
     height: 40px;
     background: #f7f7f7;
@@ -823,6 +824,7 @@ body {
       .b-form_input {
         max-width: 250px; } }
     .b-form_input__button {
+      -webkit-appearance: none;
       width: 150px;
       height: 47px;
       background: white;
