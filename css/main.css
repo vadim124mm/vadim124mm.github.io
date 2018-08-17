@@ -40,6 +40,9 @@ body {
     @media (max-width: 650px) {
       .b-block_heading {
         margin-bottom: 70px; } }
+        @media (max-width: 360px) {
+          .b-block_heading {
+            font-size: 25px; } }
   .b-block_text {
     padding-left: 20px;
     font: 300 16px Montserrat; }
@@ -50,9 +53,10 @@ body {
       margin-top: -75px;
       text-align: center;
        }
-      @media (max-width: 650px) {
-        .b-block_text__feedback {
-          margin-top: 0; } }
+      
+          @media (max-width: 650px) {
+            .b-block_text__feedback {
+              display: none; } }
 
 .b-menu_button__mobile:after {
   content: "Меню";
@@ -87,7 +91,7 @@ body {
   background-size: contain;
   background-position: center;
   background-color: #a1855c;
-  padding: 30px 10px 0 10px;
+  padding: 28px 10px 0 10px;
   overflow: hidden; 
   height: 730px;}
   @media (max-width: 1440px) {
@@ -130,11 +134,17 @@ body {
       @media (max-width: 976px) {
         .b-header_line__mobile {
           display: block;
-        
+          margin-top: -430px;
           width: 100%;
           height: 40px;
           background: #00000000;
           padding: 0 15px; } }
+          @media (max-width: 765px) {
+            .b-header_line__mobile {
+              margin-top: -360px;   
+            }
+          }
+
   .b-header_logo {
     float: left;
     color: white;
@@ -168,7 +178,7 @@ body {
 
       .b-header_button {
         margin-top: 45px;
-        margin-left: -40px;
+        margin-left: -90px;
         width: 150px;
         height: 48px;
         border-radius: 100px;
@@ -233,7 +243,10 @@ body {
       .b-header_links {
         display: none; } }
     .b-header_links__mobile {
-      margin: 20px auto; }
+    
+      margin: 0 auto;
+      margin-top: 50px;
+      margin-bottom: -10px;}
       @media (max-width: 976px) {
         .b-header_links__mobile {
           display: block; } }
@@ -249,21 +262,51 @@ body {
   list-style: none;
   color: green;
   display: inline-block; }
+
   .b-social_link:last-child {
     padding-right: 0; }
 
+    .close-btn-menu {
+      position: absolute;
+      cursor: pointer;
+      right: 20px;
+      top: 20px;
+      width: 20px;
+      height: 20px;
+     
+     
+       }
+      .close-btn-menu:before, .close-btn-menu:after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 20px;
+        border: 1px solid #ffe4ba;;
+       
+    }
+    .close-btn-menu:before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .close-btn-menu:after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
 @media (max-width: 976px) {
   .b-menu_list__mobile {
     display: none;
-    background: #4b3d29;
+    background: #a79377;
     position: absolute;
-    top: 40px;
     z-index: 3;
     width: 100%;
-    padding: 80px 0;
+    padding: 161px 0;
+    top:0;
     left: 0;
     right: 0; } }
-
+    @media (max-width: 765px) {
+      .b-menu_list__mobile {
+        padding: 96px 0;
+      }
+    }
 @media (max-width: 976px) {
   .b-menu_list__active {
     display: block;
@@ -717,7 +760,7 @@ body {
           letter-spacing: 0;
         }
       }
-    
+
 
 .feedback {
   background-color: #f2f2f2;
@@ -756,7 +799,7 @@ body {
     .b-form {
       margin: 50px auto; } }
   .b-form_heading {
-    font: 400 24px Montserrat;
+    font: 500 24px Montserrat;
     margin-bottom: 10px;
     text-align: center;
     letter-spacing: 0.3px; }
@@ -778,30 +821,29 @@ body {
     margin-bottom: 30px; }
     @media (max-width: 350px) {
       .b-form_input {
-        max-width: 200px; } }
+        max-width: 250px; } }
     .b-form_input__button {
-      width: 160px;
-      height: 50px;
-      background: #BCEC00;
-      color: #ffffff;
-      -webkit-border-radius: 10px;
-              border-radius: 10px;
+      width: 150px;
+      height: 47px;
+      background: white;
+      color: black;
       line-height: 50px;
-      font: 700 14px Montserrat;
-      border: none;
-      margin: 35px auto 0;
+      font: 500 12px Montserrat;
+      border: 1px solid black;
+      margin: 42px auto 0;
       display: block;
       cursor: pointer; }
       .b-form_input__button:hover {
         color: #ffffff;
-        background: #a9d011; }
+        background: #474747; 
+      border: none;}
   .b-form_label {
     font: 500 10px Montserrat;
     color: #000000;
     text-transform: uppercase;
     display: block;
     margin-bottom: 10px;
-    padding-left: 35px;
+    padding-left: 25px;
     letter-spacing: 0.3px; }
 
 .b-map {
@@ -1038,4 +1080,14 @@ body {
                  .insta{
                    overflow: hidden;
                  }
+                 @media (max-width: 759px) {
+                   .insta {
+                    margin-bottom: -160px;
+                  }
+                  #gallery {
+                    margin-top: -65px;
+                    margin-bottom: -30px;
+                  }
+                }
+
                  

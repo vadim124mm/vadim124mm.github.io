@@ -32,7 +32,7 @@ var feed = new Instafeed({
                     {
                       breakpoint: 640,
                       settings: {
-            
+                        arrows: true,
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         dots: false
