@@ -825,6 +825,7 @@ body {
         max-width: 250px; } }
     .b-form_input__button {
       -webkit-appearance: none;
+      border-radius: 0;
       width: 150px;
       height: 47px;
       background: white;
