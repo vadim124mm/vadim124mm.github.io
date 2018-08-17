@@ -6,6 +6,7 @@ $(document).ready(function(){
         autoplaySpeed: 2500,
         dots: true,
         pauseOnHover: false,
+        arrows:false,
         responsive: [
             {
               breakpoint: 976,

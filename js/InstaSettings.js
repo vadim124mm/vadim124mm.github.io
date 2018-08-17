@@ -7,13 +7,19 @@ var feed = new Instafeed({
         resolution: 'standard_resolution',
         after: function () {
             $('#instafeed').slick({
+              arrows: true,
+              
                 slidesToShow: 4,
                 slidesToScroll: 4,
-                dots: true, 
+                dots: true,
+                infinite: true,
+                autoplay:true,
+         
                 responsive: [
                   {
                     breakpoint: 875,
                     settings: {
+                     dots:false,
                       centerMode: true,
                        slidesToShow: 3, 
                        slidesToScroll: 3,
@@ -23,6 +29,7 @@ var feed = new Instafeed({
                   {
                     breakpoint: 760,
                     settings: {
+                  
                       dots: false, 
                       centerMode: true,
                       slidesToShow: 2, 
@@ -32,10 +39,12 @@ var feed = new Instafeed({
                     {
                       breakpoint: 640,
                       settings: {
-                        arrows: true,
+                        dots: false, 
+                        
+                        
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        dots: false
+                        
                       }
                   
                    
