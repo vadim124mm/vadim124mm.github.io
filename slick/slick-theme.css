@@ -79,14 +79,19 @@
 .slick-prev{
     left: 25px;
     z-index: 2;
-    top: 150px;
+    top: 40%;
 }
 @media (max-width: 400px) {
     .slick-prev {
-      color: white;
-      opacity: 0.7;
-      left: 75px;}
-    }
+        left: 3%;}
+
+      }
+@media (max-width: 350px) {
+    .slick-prev {
+        left: 10%;}
+    
+}
+
 [dir='rtl'] .slick-prev
 {
     right: -25px;
@@ -96,15 +101,20 @@
 
 .slick-next
 {
-    top: 150px;
+    top: 40%;
     right: 25px;
 }
 @media (max-width: 400px) {
+  
     .slick-next {
-      color: white;
-      opacity: 0.7;
-      right: 75px;}
-    }
+        right: 3%;}
+      }
+@media (max-width: 350px) {
+   
+    .slick-next {
+        right: 10%;}
+}
+
 [dir='rtl'] .slick-next
 {
     right: auto;
