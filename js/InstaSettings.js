@@ -20,6 +20,7 @@ var feed = new Instafeed({
                   {
                     breakpoint: 875,
                     settings: {
+                      autoplay:true,
                      dots:false,
                       centerMode: true,
                        slidesToShow: 3, 
