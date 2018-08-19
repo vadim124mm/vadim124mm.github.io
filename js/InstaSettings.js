@@ -15,12 +15,13 @@ var feed = new Instafeed({
                 infinite: true,
                 adaptiveHeight: true,
                 arrows: true,
+                autoplay:true,
          
                 responsive: [
                   {
                     breakpoint: 875,
                     settings: {
-                      autoplay:true,
+                     
                      dots:false,
                       centerMode: true,
                        slidesToShow: 3, 
