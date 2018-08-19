@@ -20,12 +20,12 @@ xhr.open("POST", "https://cors-anywhere.herokuapp.com/http://telegramsender.some
 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 xhr.onreadystatechange = reqReadyStateChange;
 xhr.onloadstart = function () {
-  button.style="display:none";
-  bar.style="display:block"
+  button.style="display:none;";
+  bar.style="display:block; position: absolute; margin-top: 23px; margin-left: 27%;"
   };
   xhr.onloadend = function () {
   bar.style="display:none"
-  button.style="display:inline; background-color:#33ff33";
+  button.style="display:inline; font: 600 14px Montserrat; color: white; border: none; background-color: #54e854; margin-left: 25%; margin-top: 12px;";
   button.value="Отправлено!"
   };
 xhr.send(body);

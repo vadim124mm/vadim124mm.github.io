@@ -343,7 +343,7 @@ body {
     padding: 0; }
 
 .b-menu_link {
-  font: 500 14px Montserrat;
+  font: 500 16px Montserrat;
   color: white; }
   .b-menu_link:first-child {
     padding-left: 0; }
@@ -924,7 +924,7 @@ body {
   .b-footer_links a {
     color: #474747; }
     .b-footer_links a:hover {
-      color: #BCEC00; }
+      color: rgb(216, 216, 216); }
 
     .poppy {
         position: absolute;
@@ -937,6 +937,11 @@ body {
         width:50%;
        
       }
+      @media (max-width: 500px) {
+        .poppy {
+          margin-top: 30px;
+        }
+      }
       @media (max-width: 1000px) {
         .poppy {
           margin-top: 120px;
@@ -945,11 +950,7 @@ body {
           padding: 35px 5px 35px 5px;
         }
       }
-       @media (max-width: 500px) {
-        .poppy {
-          margin-top: 1s0px;
-        }
-      }
+     
 
       .close-btn {
         position: absolute;
