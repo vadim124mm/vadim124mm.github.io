@@ -79,7 +79,7 @@
 .slick-prev{
     left: 25px;
     z-index: 2;
-    top: 40%;
+    top: 45%;
 }
 @media (max-width: 400px) {
     .slick-prev {
@@ -101,7 +101,7 @@
 
 .slick-next
 {
-    top: 40%;
+    top: 45%;
     right: 25px;
 }
 @media (max-width: 400px) {

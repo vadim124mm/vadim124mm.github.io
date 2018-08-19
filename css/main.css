@@ -529,7 +529,8 @@ body {
           background-size: auto 216px;  } }
       @media (max-width: 361px) {
         .b-article_pic__1  {
-          background-position-x: 19px; } }
+          background-position-x: 43px;
+          background-position-y: 68px; } }
           @media (max-width: 340px) {
             .b-article_pic__1  {
               background-position-x: 8px;
@@ -580,7 +581,7 @@ body {
           background-position-x: 42px; } }
       @media (max-width: 361px) {
         .b-article_pic__3  {
-          background-position-x: 37px; } }
+          background-position-x: 50px; } }
           @media (max-width: 350px) {
             .b-article_pic__3  {
               background-position-x: 26px; } }
@@ -640,7 +641,7 @@ body {
                   background-size: auto 243px;} }
               @media (max-width: 361px) {
                 .b-article_pic__5  {
-                  background-position-x: 16px; } }
+                  background-position-x: 44px; } }
                   @media (max-width: 350px) {
                     .b-article_pic__5  {
                       background-position-x: 16px; 
@@ -697,7 +698,7 @@ body {
 	&:last-child
 		margin-right: 0px; */
 .item {
-  width: 220px;
+  width: 180px;
   height: 300px;
   background-color: #f2f2f2;
   padding: 45px 0;
@@ -913,10 +914,15 @@ body {
       }
       @media (max-width: 1000px) {
         .poppy {
-          
+          margin-top: 120px;
           width:80%;
           margin-left: -15%;
           padding: 35px 5px 35px 5px;
+        }
+      }
+       @media (max-width: 500px) {
+        .poppy {
+          margin-top: 0px;
         }
       }
 
@@ -1113,7 +1119,7 @@ body {
                   }
                 }
                 .slick-prev:after {
-                  font: 70px icomoon;
+                  font: 45px icomoon;
                   color: black;
                   opacity: 0.7;
                   content: '\e904'; 
@@ -1121,7 +1127,7 @@ body {
               
                 
                 .slick-next:after {
-                  font: 70px icomoon;
+                  font: 45px icomoon;
                   color: black;
                   opacity: 0.7;
                   content: '\e903'; 
@@ -1136,4 +1142,12 @@ body {
                       opacity: 0.7;
                 }
               }
-      
+              .individ
+              {
+                margin-top: -10px;
+                margin-bottom: -5px;
+  
+              }
+              .individ-block{
+                background-color: #e5efe7;
+              }
