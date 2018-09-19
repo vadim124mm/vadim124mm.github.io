@@ -93,7 +93,7 @@ body {
   background-color: #a1855c;
   padding: 28px 10px 0 10px;
   overflow: hidden; 
-  height: 730px;}
+  height: 665px;}
   @media (max-width: 1440px) {
   .b-header{
     background-size: cover;
@@ -256,7 +256,7 @@ body {
             }
              }
   .b-header_links {
-    margin-top: 280px;
+    margin-top: 230px;
     color: white;
     float: left; }
     @media (max-width: 976px) {
